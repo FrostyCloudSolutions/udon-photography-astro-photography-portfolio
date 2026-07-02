@@ -5,6 +5,22 @@ collections:
     name: Travel
   - id: street
     name: Street
+  - id: in-home
+    name: In-Home
+  - id: outdoor
+    name: Outdoor
+  - id: maternity
+    name: Maternity
+  - id: pet
+    name: Pet
+  - id: parties-and-events
+    name: Parties & Events
+  - id: fine-art
+    name: Fine Art Projects
+  - id: commercial
+    name: Commercial
+  - id: workshops
+    name: Workshops
 images:
   - path: nature/nature-2.jpg
     meta:

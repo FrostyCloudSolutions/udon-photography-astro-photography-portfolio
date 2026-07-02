@@ -7,11 +7,11 @@ const base = import.meta.env.BASE_URL;
 
 const menuItems = [
   { name: 'Home', link: `${base}` },
-  { name: 'Portfolio', link: `${base}collections` },
-  { name: 'Journal', link: `${base}journal` },
-  { name: 'About', link: `${base}about` },
-  { name: 'Investment', link: `${base}investment` },
-  { name: 'Inquire', link: `${base}inquire` },
+  { name: 'Portfolio', link: `${base}/collections` },
+  { name: 'Journal', link: `${base}/journal` },
+  { name: 'About', link: `${base}/about` },
+  { name: 'Investment', link: `${base}/investment` },
+  { name: 'Inquire', link: `${base}/inquire` },
 ];
 ---
 
@@ -41,33 +41,33 @@ const menuItems = [
 
 			<!-- Portfolio Dropdown -->
 			<div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-				<a href={`${base}collections`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">Portfolio</a>
+				<a href={`${base}/collections`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">Portfolio</a>
 				<div x-show="open" class="absolute top-full left-0 bg-white shadow-md py-2 min-w-48 z-50">
-					<a href={`${base}collections/in-home`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">In-Home</a>
-					<a href={`${base}collections/outdoor`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Outdoor</a>
-					<a href={`${base}collections/maternity`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Maternity</a>
-					<a href={`${base}collections/pet`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Pet</a>
-					<a href={`${base}collections/parties-and-events`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Parties & Events</a>
-					<a href={`${base}collections/fine-art`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Fine Art Projects</a>
-					<a href={`${base}collections/commercial`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Commercial Work</a>
-					<a href={`${base}collections/workshops`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Workshops</a>
+					<a href={`${base}/collections/in-home`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">In-Home</a>
+					<a href={`${base}/collections/outdoor`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Outdoor</a>
+					<a href={`${base}/collections/maternity`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Maternity</a>
+					<a href={`${base}/collections/pet`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Pet</a>
+					<a href={`${base}/collections/parties-and-events`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Parties & Events</a>
+					<a href={`${base}/collections/fine-art`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Fine Art Projects</a>
+					<a href={`${base}/collections/commercial`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Commercial Work</a>
+					<a href={`${base}/collections/workshops`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Workshops</a>
 				</div>
 			</div>
 
 			<!-- Journal Dropdown -->
 			<div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-				<a href={`${base}journal`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">Journal</a>
+				<a href={`${base}/journal`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">Journal</a>
 				<div x-show="open" class="absolute top-full left-0 bg-white shadow-md py-2 min-w-48 z-50">
-					<a href={`${base}journal/an-ordinary-afternoon`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">An Ordinary Afternoon</a>
-					<a href={`${base}journal/turning-one`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Turning One</a>
-					<a href={`${base}journal/waiting-for-you`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Waiting for You</a>
-					<a href={`${base}journal/in-red`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">In Red</a>
+					<a href={`${base}/journal/an-ordinary-afternoon`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">An Ordinary Afternoon</a>
+					<a href={`${base}/journal/turning-one`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Turning One</a>
+					<a href={`${base}/journal/waiting-for-you`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Waiting for You</a>
+					<a href={`${base}/journal/in-red`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">In Red</a>
 				</div>
 			</div>
 
-			<a href={`${base}about`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">About</a>
-			<a href={`${base}investment`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">Investment</a>
-			<a href={`${base}inquire`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">Inquire</a>
+			<a href={`${base}/about`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">About</a>
+			<a href={`${base}/investment`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">Investment</a>
+			<a href={`${base}/inquire`} class="nav-link relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:bg-black after:w-0 hover:after:w-full transition-all">Inquire</a>
 		</div>
 		<!-- Mobile Menu Button -->
 		<button @click="isOpen = !isOpen" class="md:hidden text-gray-800 focus:outline-none">
@@ -99,14 +99,14 @@ const menuItems = [
 					<span x-text="portfolioOpen ? '−' : '+'"></span>
 				</button>
 				<div x-show="portfolioOpen" class="flex flex-col pl-4 mt-2 space-y-2">
-					<a href={`${base}collections/in-home`} class="text-sm text-gray-600" @click="isOpen = false">In-Home</a>
-					<a href={`${base}collections/outdoor`} class="text-sm text-gray-600" @click="isOpen = false">Outdoor</a>
-					<a href={`${base}collections/maternity`} class="text-sm text-gray-600" @click="isOpen = false">Maternity</a>
-					<a href={`${base}collections/pet`} class="text-sm text-gray-600" @click="isOpen = false">Pet</a>
-					<a href={`${base}collections/parties-and-events`} class="text-sm text-gray-600" @click="isOpen = false">Parties & Events</a>
-					<a href={`${base}collections/fine-art`} class="text-sm text-gray-600" @click="isOpen = false">Fine Art Projects</a>
-					<a href={`${base}collections/commercial`} class="text-sm text-gray-600" @click="isOpen = false">Commercial Work</a>
-					<a href={`${base}collections/workshops`} class="text-sm text-gray-600" @click="isOpen = false">Workshops</a>
+					<a href={`${base}/collections/in-home`} class="text-sm text-gray-600" @click="isOpen = false">In-Home</a>
+					<a href={`${base}/collections/outdoor`} class="text-sm text-gray-600" @click="isOpen = false">Outdoor</a>
+					<a href={`${base}/collections/maternity`} class="text-sm text-gray-600" @click="isOpen = false">Maternity</a>
+					<a href={`${base}/collections/pet`} class="text-sm text-gray-600" @click="isOpen = false">Pet</a>
+					<a href={`${base}/collections/parties-and-events`} class="text-sm text-gray-600" @click="isOpen = false">Parties & Events</a>
+					<a href={`${base}/collections/fine-art`} class="text-sm text-gray-600" @click="isOpen = false">Fine Art Projects</a>
+					<a href={`${base}/collections/commercial`} class="text-sm text-gray-600" @click="isOpen = false">Commercial Work</a>
+					<a href={`${base}/collections/workshops`} class="text-sm text-gray-600" @click="isOpen = false">Workshops</a>
 				</div>
 			</div>
 
@@ -117,16 +117,16 @@ const menuItems = [
 					<span x-text="journalOpen ? '−' : '+'"></span>
 				</button>
 				<div x-show="journalOpen" class="flex flex-col pl-4 mt-2 space-y-2">
-					<a href={`${base}journal/an-ordinary-afternoon`} class="text-sm text-gray-600" @click="isOpen = false">An Ordinary Afternoon</a>
-					<a href={`${base}journal/turning-one`} class="text-sm text-gray-600" @click="isOpen = false">Turning One</a>
-					<a href={`${base}journal/waiting-for-you`} class="text-sm text-gray-600" @click="isOpen = false">Waiting for You</a>
-					<a href={`${base}journal/in-red`} class="text-sm text-gray-600" @click="isOpen = false">In Red</a>
+					<a href={`${base}/journal/an-ordinary-afternoon`} class="text-sm text-gray-600" @click="isOpen = false">An Ordinary Afternoon</a>
+					<a href={`${base}/journal/turning-one`} class="text-sm text-gray-600" @click="isOpen = false">Turning One</a>
+					<a href={`${base}/journal/waiting-for-you`} class="text-sm text-gray-600" @click="isOpen = false">Waiting for You</a>
+					<a href={`${base}/journal/in-red`} class="text-sm text-gray-600" @click="isOpen = false">In Red</a>
 				</div>
 			</div>
 
-			<a href={`${base}about`} class="text-lg" @click="isOpen = false">About</a>
-			<a href={`${base}investment`} class="text-lg" @click="isOpen = false">Investment</a>
-			<a href={`${base}inquire`} class="text-lg" @click="isOpen = false">Inquire</a>
+			<a href={`${base}/about`} class="text-lg" @click="isOpen = false">About</a>
+			<a href={`${base}/investment`} class="text-lg" @click="isOpen = false">Investment</a>
+			<a href={`${base}/inquire`} class="text-lg" @click="isOpen = false">Inquire</a>
 		</div>
 	</div>
 	</nav>

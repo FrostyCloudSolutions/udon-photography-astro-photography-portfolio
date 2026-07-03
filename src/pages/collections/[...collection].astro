@@ -30,16 +30,16 @@ export const getStaticPaths = async () => {
 			</div>
 
 			<div class="flex justify-center mb-10">
-				<div class="flex flex-wrap gap-2 justify-center">
+				<div class="flex flex-wrap gap-4 justify-center">
 					{
 						collections.map((collectionBtn) => (
-							<a href={`${base}/collections/${collectionBtn.id ? collectionBtn.id : ''}`}>
+							<a href={`/collections/${collectionBtn.id ? collectionBtn.id : ''}`}>
 								<div
-									class={`px-4 py-2 border ${
+									class={`px-2 py-1 text-sm tracking-widest uppercase ${
 										collectionBtn.id === collection
-											? 'border-black bg-black text-white'
-											: 'border-gray-200 text-gray-700 hover:border-gray-300'
-									} transition-all`}
+											? 'text-black underline underline-offset-4'
+											: 'text-gray-400 hover:text-black transition-colors'
+									}`}
 								>
 									{collectionBtn.name}
 								</div>

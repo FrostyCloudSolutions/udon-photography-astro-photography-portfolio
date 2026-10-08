@@ -1,5 +1,7 @@
 # 📸 Astro Photography Portfolio Template
 
+> Part of the FrostByte estate — [workspace map](https://github.com/FrostyCloudSolutions/frostbyte-hq/blob/main/MAP.md)
+
 [![Build & Test](https://github.com/rockem/astro-photography-portfolio/actions/workflows/test.yml/badge.svg)](https://github.com/rockem/astro-photography-portfolio/actions/workflows/test.yml)
 
 A modern, fast, and highly customizable photography portfolio template built with [Astro](https://astro.build).
